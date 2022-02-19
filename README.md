@@ -1,8 +1,7 @@
 - 👋 Hi, I’m @adrielakak
 - 👀 I’m interested in finance and programming
-- 🌱 I’m currently learning Python and i try to learn C++ too. 
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 🌱 I’m currently learning Python.
+
 
 <!---
 adrielakak/adrielakak is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
