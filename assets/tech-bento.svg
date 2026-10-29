@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 310" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bentoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0C10" />
+      <stop offset="100%" stop-color="#12131A" />
+    </linearGradient>
+
+    <linearGradient id="bentoBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.16" />
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#2997FF" stop-opacity="0.14" />
+    </linearGradient>
+
+    <linearGradient id="barBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2997FF" />
+      <stop offset="100%" stop-color="#64D2FF" />
+    </linearGradient>
+
+    <linearGradient id="barGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30D158" />
+      <stop offset="100%" stop-color="#64D2FF" />
+    </linearGradient>
+
+    <linearGradient id="barPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5E5CE6" />
+      <stop offset="100%" stop-color="#BF5AF2" />
+    </linearGradient>
+
+    <style>
+      .font-sans {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      .font-mono {
+        font-family: "SF Mono", "JetBrains Mono", "Fira Code", Menlo, Consolas, monospace;
+      }
+      @keyframes glowBar {
+        0%, 100% { opacity: 0.82; }
+        50% { opacity: 1; }
+      }
+      .progress-fill {
+        animation: glowBar 3.2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- COLUMN 1: MACHINE LEARNING & AI -->
+  <g transform="translate(4, 4)">
+    <rect x="0" y="0" width="320" height="214" rx="18" fill="url(#bentoBg)" stroke="url(#bentoBorder)" stroke-width="1.2" />
+    <line x1="24" y1="0.6" x2="296" y2="0.6" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1" />
+
+    <text x="22" y="30" fill="#2997FF" font-size="10.5" font-weight="600" letter-spacing="0.9" class="font-mono">01 · MACHINE LEARNING &amp; AI</text>
+    <text x="22" y="54" fill="#FFFFFF" font-size="17" font-weight="700" class="font-sans">Predictive &amp; Explainable AI</text>
+
+    <!-- Skill Rows -->
+    <text x="22" y="84" fill="#E5E5EA" font-size="12" font-weight="500" class="font-sans">Python · Scikit-Learn · LightGBM · XGBoost</text>
+    <rect x="22" y="92" width="276" height="5" rx="2.5" fill="#1C1D26" />
+    <rect x="22" y="92" width="256" height="5" rx="2.5" fill="url(#barBlue)" class="progress-fill" />
+
+    <text x="22" y="122" fill="#E5E5EA" font-size="12" font-weight="500" class="font-sans">TreeSHAP (XAI) · Feature Engineering</text>
+    <rect x="22" y="130" width="276" height="5" rx="2.5" fill="#1C1D26" />
+    <rect x="22" y="130" width="238" height="5" rx="2.5" fill="url(#barBlue)" class="progress-fill" />
+
+    <text x="22" y="160" fill="#E5E5EA" font-size="12" font-weight="500" class="font-sans">NEAT NeuroEvolution · Financial NLP</text>
+    <rect x="22" y="168" width="276" height="5" rx="2.5" fill="#1C1D26" />
+    <rect x="22" y="168" width="224" height="5" rx="2.5" fill="url(#barBlue)" class="progress-fill" />
+
+    <text x="22" y="196" fill="#8E8E93" font-size="11" class="font-mono">Classification · Ranking · Backtesting</text>
+  </g>
+
+  <!-- COLUMN 2: DATA ANALYTICS & ENGINEERING -->
+  <g transform="translate(340, 4)">
+    <rect x="0" y="0" width="320" height="214" rx="18" fill="url(#bentoBg)" stroke="url(#bentoBorder)" stroke-width="1.2" />
+    <line x1="24" y1="0.6" x2="296" y2="0.6" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1" />
+
+    <text x="22" y="30" fill="#30D158" font-size="10.5" font-weight="600" letter-spacing="0.9" class="font-mono">02 · DATA SCIENCE &amp; ANALYTICS</text>
+    <text x="22" y="54" fill="#FFFFFF" font-size="17" font-weight="700" class="font-sans">Pipelines, SQL &amp; Visualization</text>
+
+    <!-- Skill Rows -->
+    <text x="22" y="84" fill="#E5E5EA" font-size="12" font-weight="500" class="font-sans">Pandas · NumPy · Statistical Modeling</text>
+    <rect x="22" y="92" width="276" height="5" rx="2.5" fill="#1C1D26" />
+    <rect x="22" y="92" width="258" height="5" rx="2.5" fill="url(#barGreen)" class="progress-fill" />
+
+    <text x="22" y="122" fill="#E5E5EA" font-size="12" font-weight="500" class="font-sans">SQL · PostgreSQL · Relational ERD/MLD</text>
+    <rect x="22" y="130" width="276" height="5" rx="2.5" fill="#1C1D26" />
+    <rect x="22" y="130" width="244" height="5" rx="2.5" fill="url(#barGreen)" class="progress-fill" />
+
+    <text x="22" y="160" fill="#E5E5EA" font-size="12" font-weight="500" class="font-sans">Plotly · GeoJSON · Power BI · Quarto</text>
+    <rect x="22" y="168" width="276" height="5" rx="2.5" fill="#1C1D26" />
+    <rect x="22" y="168" width="236" height="5" rx="2.5" fill="url(#barGreen)" class="progress-fill" />
+
+    <text x="22" y="196" fill="#8E8E93" font-size="11" class="font-mono">ETL · KPI Automation · Data Quality Audit</text>
+  </g>
+
+  <!-- COLUMN 3: SOFTWARE & AI SYSTEMS -->
+  <g transform="translate(676, 4)">
+    <rect x="0" y="0" width="320" height="214" rx="18" fill="url(#bentoBg)" stroke="url(#bentoBorder)" stroke-width="1.2" />
+    <line x1="24" y1="0.6" x2="296" y2="0.6" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1" />
+
+    <text x="22" y="30" fill="#BF5AF2" font-size="10.5" font-weight="600" letter-spacing="0.9" class="font-mono">03 · APPLICATION &amp; AI SYSTEMS</text>
+    <text x="22" y="54" fill="#FFFFFF" font-size="17" font-weight="700" class="font-sans">APIs, Interactive Web &amp; Native</text>
+
+    <!-- Skill Rows -->
+    <text x="22" y="84" fill="#E5E5EA" font-size="12" font-weight="500" class="font-sans">FastAPI · REST · WebSockets (Real-Time)</text>
+    <rect x="22" y="92" width="276" height="5" rx="2.5" fill="#1C1D26" />
+    <rect x="22" y="92" width="242" height="5" rx="2.5" fill="url(#barPurple)" class="progress-fill" />
+
+    <text x="22" y="122" fill="#E5E5EA" font-size="12" font-weight="500" class="font-sans">TypeScript · React · Next.js · Three.js</text>
+    <rect x="22" y="130" width="276" height="5" rx="2.5" fill="#1C1D26" />
+    <rect x="22" y="130" width="230" height="5" rx="2.5" fill="url(#barPurple)" class="progress-fill" />
+
+    <text x="22" y="160" fill="#E5E5EA" font-size="12" font-weight="500" class="font-sans">Swift · SwiftUI (iOS App Store &amp; macOS)</text>
+    <rect x="22" y="168" width="276" height="5" rx="2.5" fill="#1C1D26" />
+    <rect x="22" y="168" width="218" height="5" rx="2.5" fill="url(#barPurple)" class="progress-fill" />
+
+    <text x="22" y="196" fill="#8E8E93" font-size="11" class="font-mono">Git · Linux · Automated Testing · CI/CD</text>
+  </g>
+
+  <!-- BOTTOM BAR: ACADEMIC & INTERNATIONAL TRACK -->
+  <g transform="translate(4, 232)">
+    <rect x="0" y="0" width="992" height="72" rx="18" fill="url(#bentoBg)" stroke="url(#bentoBorder)" stroke-width="1.2" />
+    <line x1="36" y1="0.6" x2="956" y2="0.6" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1" />
+
+    <!-- Milestone 1 -->
+    <circle cx="32" cy="36" r="5" fill="#2997FF" />
+    <text x="48" y="31" fill="#FFFFFF" font-size="13.5" font-weight="700" class="font-sans">Centrale Nantes × Audencia</text>
+    <text x="48" y="49" fill="#8E8E93" font-size="11.5" font-weight="400" class="font-sans">Bachelor in Big Data &amp; Management (Engineering &amp; Strategy)</text>
+
+    <!-- Divider 1 -->
+    <line x1="392" y1="16" x2="392" y2="56" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
+
+    <!-- Milestone 2 -->
+    <circle cx="418" cy="36" r="5" fill="#64D2FF" />
+    <text x="434" y="31" fill="#FFFFFF" font-size="13.5" font-weight="700" class="font-sans">Shenzhen University (China)</text>
+    <text x="434" y="49" fill="#8E8E93" font-size="11.5" font-weight="400" class="font-sans">Academic Exchange · Quantitative Finance &amp; Markets</text>
+
+    <!-- Divider 2 -->
+    <line x1="726" y1="16" x2="726" y2="56" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
+
+    <!-- Milestone 3 -->
+    <circle cx="752" cy="36" r="5" fill="#5E5CE6" />
+    <text x="768" y="31" fill="#FFFFFF" font-size="13.5" font-weight="700" class="font-sans">Centrale Casablanca</text>
+    <text x="768" y="49" fill="#8E8E93" font-size="11.5" font-weight="400" class="font-sans">Exchange · AI &amp; Engineering</text>
+  </g>
+</svg>
