@@ -1,234 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 390" width="100%" height="100%">
   <defs>
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0D0E12" />
-      <stop offset="100%" stop-color="#13141B" />
-    </linearGradient>
-
-    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18" />
-      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.06" />
-      <stop offset="100%" stop-color="#2997FF" stop-opacity="0.16" />
-    </linearGradient>
-
-    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2997FF" />
-      <stop offset="100%" stop-color="#64D2FF" />
-    </linearGradient>
-
-    <linearGradient id="greenAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#30D158" />
-      <stop offset="100%" stop-color="#64D2FF" />
-    </linearGradient>
-
-    <linearGradient id="purpleAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#5E5CE6" />
-      <stop offset="100%" stop-color="#BF5AF2" />
-    </linearGradient>
-
-    <linearGradient id="amberAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF9F0A" />
-      <stop offset="100%" stop-color="#FFD60A" />
-    </linearGradient>
-
     <style>
-      .font-sans {
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      }
-      .font-mono {
-        font-family: "SF Mono", "JetBrains Mono", "Fira Code", Menlo, Consolas, monospace;
-      }
-      @keyframes pulseDot {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.35; }
-      }
-      @keyframes dashFlow {
-        0% { stroke-dashoffset: 240; }
-        100% { stroke-dashoffset: 0; }
-      }
-      .live-dot {
-        animation: pulseDot 2.5s ease-in-out infinite;
-      }
-      .sparkline {
-        stroke-dasharray: 240;
-        animation: dashFlow 4.5s ease-in-out infinite alternate;
-      }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif; }
+      .mono { font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace; }
     </style>
   </defs>
 
-  <!-- CARD 1: ADASTRA / WEBANK (Top Left) -->
+  <!-- CARD 1: Adastra (Hackathon FinTechathon 2026) -->
   <g transform="translate(4, 4)">
-    <rect x="0" y="0" width="486" height="202" rx="20" fill="url(#cardBg)" stroke="url(#cardBorder)" stroke-width="1.2" />
-    <line x1="28" y1="0.6" x2="458" y2="0.6" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" />
+    <rect x="0" y="0" width="484" height="182" rx="14" fill="#080808" stroke="#1F1F1F" stroke-width="1.2"/>
 
-    <!-- Badge -->
-    <rect x="24" y="22" width="184" height="24" rx="12" fill="#172130" stroke="#2997FF" stroke-opacity="0.35" stroke-width="1" />
-    <circle cx="38" cy="34" r="3.5" fill="#2997FF" class="live-dot" />
-    <text x="48" y="38" fill="#64D2FF" font-size="10.5" font-weight="600" letter-spacing="0.4" class="font-mono">FINTECHATHON 2026 · ML</text>
+    <text x="26" y="34" class="mono" font-size="10.5" fill="#71717A" letter-spacing="0.8">FINTECHATHON 2026 · SHENZHEN UNIVERSITY</text>
+    <path d="M 388 34 C 408 32, 424 24, 456 18" fill="none" stroke="#22C55E" stroke-width="1.8" stroke-linecap="round"/>
 
-    <!-- Sparkline top right -->
-    <path d="M 350 42 C 375 40, 392 30, 412 32 C 430 34, 442 20, 462 18" fill="none" stroke="url(#greenAccent)" stroke-width="2" stroke-linecap="round" class="sparkline" />
-    <text x="394" y="54" fill="#30D158" font-size="10" font-weight="600" class="font-mono">+14.02% Alpha</text>
+    <text x="26" y="64" class="sans" font-size="19" font-weight="600" fill="#FFFFFF" letter-spacing="-0.3">Adastra — Quantitative Risk &amp; ML</text>
+    <text x="26" y="92" class="sans" font-size="13" fill="#A1A1AA">Explainable gradient boosting (LightGBM + TreeSHAP)</text>
+    <text x="26" y="112" class="sans" font-size="13" fill="#A1A1AA">&amp; financial NLP for China A-Shares allocation.</text>
 
-    <!-- Title & Description -->
-    <text x="24" y="76" fill="#FFFFFF" font-size="20" font-weight="700" letter-spacing="-0.4" class="font-sans">
-      Adastra — Quantitative Risk &amp; ML Cockpit
-    </text>
-    <text x="24" y="102" fill="#A1A1AA" font-size="12.5" font-weight="400" class="font-sans">
-      Cost-sensitive LightGBM pipeline, TreeSHAP explainability &amp; Chinese financial
-    </text>
-    <text x="24" y="121" fill="#A1A1AA" font-size="12.5" font-weight="400" class="font-sans">
-      news NLP for China A-Shares portfolio allocation under CSRC suitability rules.
-    </text>
+    <g transform="translate(26, 136)">
+      <rect x="0" y="0" width="76" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="38" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">LightGBM</text>
 
-    <!-- Tech Stack Pills -->
-    <g transform="translate(24, 152)">
-      <rect x="0" y="0" width="76" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="38" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">LightGBM</text>
+      <rect x="84" y="0" width="76" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="122" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">TreeSHAP</text>
 
-      <rect x="84" y="0" width="80" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="124" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">TreeSHAP</text>
+      <rect x="168" y="0" width="68" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="202" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">FastAPI</text>
 
-      <rect x="172" y="0" width="68" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="206" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">FastAPI</text>
-
-      <rect x="248" y="0" width="66" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="281" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">React 18</text>
-
-      <rect x="322" y="0" width="64" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="354" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">Quarto</text>
+      <rect x="244" y="0" width="58" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="273" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">React</text>
     </g>
   </g>
 
-  <!-- CARD 2: AUTOPILOT FSD (Top Right) -->
-  <g transform="translate(510, 4)">
-    <rect x="0" y="0" width="486" height="202" rx="20" fill="url(#cardBg)" stroke="url(#cardBorder)" stroke-width="1.2" />
-    <line x1="28" y1="0.6" x2="458" y2="0.6" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" />
+  <!-- CARD 2: Train DB (SZU SQL Database Project) -->
+  <g transform="translate(512, 4)">
+    <rect x="0" y="0" width="484" height="182" rx="14" fill="#080808" stroke="#1F1F1F" stroke-width="1.2"/>
 
-    <!-- Badge -->
-    <rect x="24" y="22" width="194" height="24" rx="12" fill="#1E1930" stroke="#5E5CE6" stroke-opacity="0.4" stroke-width="1" />
-    <circle cx="38" cy="34" r="3.5" fill="#BF5AF2" class="live-dot" />
-    <text x="48" y="38" fill="#D9A7FF" font-size="10.5" font-weight="600" letter-spacing="0.4" class="font-mono">NEUROEVOLUTION · 60 HZ</text>
+    <text x="26" y="34" class="mono" font-size="10.5" fill="#71717A" letter-spacing="0.8">RELATIONAL DATABASE · SQL ARCHITECTURE</text>
+    <path d="M 388 32 C 410 30, 430 25, 456 20" fill="none" stroke="#22C55E" stroke-width="1.8" stroke-linecap="round"/>
 
-    <!-- Sparkline top right -->
-    <path d="M 350 40 C 370 42, 388 24, 410 28 C 432 32, 444 16, 462 20" fill="none" stroke="url(#purpleAccent)" stroke-width="2" stroke-linecap="round" class="sparkline" />
-    <text x="386" y="54" fill="#BF5AF2" font-size="10" font-weight="600" class="font-mono">15-Ch LIDAR</text>
+    <text x="26" y="64" class="sans" font-size="19" font-weight="600" fill="#FFFFFF" letter-spacing="-0.3">Train DB — Railway SQL System</text>
+    <text x="26" y="92" class="sans" font-size="13" fill="#A1A1AA">Conceptual &amp; physical schema modeling (ERD/MLD)</text>
+    <text x="26" y="112" class="sans" font-size="13" fill="#A1A1AA">with multi-join SQL queries &amp; data quality audit.</text>
 
-    <!-- Title & Description -->
-    <text x="24" y="76" fill="#FFFFFF" font-size="20" font-weight="700" letter-spacing="-0.4" class="font-sans">
-      AutoPilot FSD — Autonomous Driving AI
-    </text>
-    <text x="24" y="102" fill="#A1A1AA" font-size="12.5" font-weight="400" class="font-sans">
-      Real-time neuroevolution simulation training 50 autonomous vehicles with NEAT
-    </text>
-    <text x="24" y="121" fill="#A1A1AA" font-size="12.5" font-weight="400" class="font-sans">
-      genetic topologies, multi-class semantic LIDAR rays, and live WebSocket 3D view.
-    </text>
+    <g transform="translate(26, 136)">
+      <rect x="0" y="0" width="84" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="42" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">PostgreSQL</text>
 
-    <!-- Tech Stack Pills -->
-    <g transform="translate(24, 152)">
-      <rect x="0" y="0" width="94" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="47" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">NEAT-Python</text>
+      <rect x="92" y="0" width="52" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="118" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">SQL</text>
 
-      <rect x="102" y="0" width="68" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="136" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">FastAPI</text>
+      <rect x="152" y="0" width="78" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="191" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">ERD / MLD</text>
 
-      <rect x="178" y="0" width="88" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="222" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">WebSockets</text>
-
-      <rect x="274" y="0" width="72" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="310" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">Three.js</text>
-
-      <rect x="354" y="0" width="84" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="396" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">TypeScript</text>
+      <rect x="238" y="0" width="82" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="279" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">Data Audit</text>
     </g>
   </g>
 
-  <!-- CARD 3: PROJECT ELECTION (Bottom Left) -->
-  <g transform="translate(4, 222)">
-    <rect x="0" y="0" width="486" height="202" rx="20" fill="url(#cardBg)" stroke="url(#cardBorder)" stroke-width="1.2" />
-    <line x1="28" y1="0.6" x2="458" y2="0.6" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" />
+  <!-- CARD 3: Electoral Data Analysis (2002-2022) -->
+  <g transform="translate(4, 202)">
+    <rect x="0" y="0" width="484" height="182" rx="14" fill="#080808" stroke="#1F1F1F" stroke-width="1.2"/>
 
-    <!-- Badge -->
-    <rect x="24" y="22" width="198" height="24" rx="12" fill="#152524" stroke="#30D158" stroke-opacity="0.35" stroke-width="1" />
-    <circle cx="38" cy="34" r="3.5" fill="#30D158" class="live-dot" />
-    <text x="48" y="38" fill="#66E887" font-size="10.5" font-weight="600" letter-spacing="0.4" class="font-mono">GEOSPATIAL DATA SCIENCE</text>
+    <text x="26" y="34" class="mono" font-size="10.5" fill="#71717A" letter-spacing="0.8">STATISTICAL &amp; GEOSPATIAL DATA SCIENCE</text>
+    <path d="M 388 33 C 412 29, 432 24, 456 19" fill="none" stroke="#22C55E" stroke-width="1.8" stroke-linecap="round"/>
 
-    <!-- Sparkline top right -->
-    <path d="M 350 38 C 374 36, 398 30, 420 26 C 438 22, 450 18, 462 16" fill="none" stroke="url(#blueAccent)" stroke-width="2" stroke-linecap="round" class="sparkline" />
-    <text x="378" y="54" fill="#64D2FF" font-size="10" font-weight="600" class="font-mono">20-Yr Panel Data</text>
+    <text x="26" y="64" class="sans" font-size="19" font-weight="600" fill="#FFFFFF" letter-spacing="-0.3">Electoral Dynamics (2002–2022)</text>
+    <text x="26" y="92" class="sans" font-size="13" fill="#A1A1AA">20-year department-level study of voter turnout,</text>
+    <text x="26" y="112" class="sans" font-size="13" fill="#A1A1AA">abstention mapping &amp; political realignment.</text>
 
-    <!-- Title & Description -->
-    <text x="24" y="76" fill="#FFFFFF" font-size="20" font-weight="700" letter-spacing="-0.4" class="font-sans">
-      Electoral Data Dynamics (2002–2022)
-    </text>
-    <text x="24" y="102" fill="#A1A1AA" font-size="12.5" font-weight="400" class="font-sans">
-      Department-level statistical &amp; choropleth investigation of 20 years of French
-    </text>
-    <text x="24" y="121" fill="#A1A1AA" font-size="12.5" font-weight="400" class="font-sans">
-      presidential elections: turnout shifts, abstention mapping &amp; realignment.
-    </text>
+    <g transform="translate(26, 136)">
+      <rect x="0" y="0" width="64" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="32" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">Python</text>
 
-    <!-- Tech Stack Pills -->
-    <g transform="translate(24, 152)">
-      <rect x="0" y="0" width="66" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="33" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">Python</text>
+      <rect x="72" y="0" width="64" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="104" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">Pandas</text>
 
-      <rect x="74" y="0" width="66" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="107" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">Pandas</text>
+      <rect x="144" y="0" width="60" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="174" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">Plotly</text>
 
-      <rect x="148" y="0" width="66" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="181" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">Plotly</text>
-
-      <rect x="222" y="0" width="74" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="259" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">GeoJSON</text>
-
-      <rect x="304" y="0" width="68" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="338" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">Jupyter</text>
+      <rect x="212" y="0" width="72" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="248" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">GeoJSON</text>
     </g>
   </g>
 
-  <!-- CARD 4: ALGOBOT & QUANTITATIVE SIGNAL ENGINE (Bottom Right) -->
-  <g transform="translate(510, 222)">
-    <rect x="0" y="0" width="486" height="202" rx="20" fill="url(#cardBg)" stroke="url(#cardBorder)" stroke-width="1.2" />
-    <line x1="28" y1="0.6" x2="458" y2="0.6" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" />
+  <!-- CARD 4: Interactive Portfolio -->
+  <g transform="translate(512, 202)">
+    <rect x="0" y="0" width="484" height="182" rx="14" fill="#080808" stroke="#1F1F1F" stroke-width="1.2"/>
 
-    <!-- Badge -->
-    <rect x="24" y="22" width="206" height="24" rx="12" fill="#271F14" stroke="#FF9F0A" stroke-opacity="0.38" stroke-width="1" />
-    <circle cx="38" cy="34" r="3.5" fill="#FF9F0A" class="live-dot" />
-    <text x="48" y="38" fill="#FFD60A" font-size="10.5" font-weight="600" letter-spacing="0.4" class="font-mono">ALGORITHMIC ML &amp; BACKTEST</text>
+    <text x="26" y="34" class="mono" font-size="10.5" fill="#71717A" letter-spacing="0.8">INTERACTIVE WEB &amp; DATA PORTFOLIO</text>
+    <path d="M 388 33 C 412 28, 434 24, 456 18" fill="none" stroke="#22C55E" stroke-width="1.8" stroke-linecap="round"/>
 
-    <!-- Sparkline top right -->
-    <path d="M 350 40 C 372 34, 390 38, 412 24 C 430 18, 446 22, 462 14" fill="none" stroke="url(#amberAccent)" stroke-width="2" stroke-linecap="round" class="sparkline" />
-    <text x="380" y="54" fill="#FFD60A" font-size="10" font-weight="600" class="font-mono">Ensemble Models</text>
+    <text x="26" y="64" class="sans" font-size="19" font-weight="600" fill="#FFFFFF" letter-spacing="-0.3">Personal Portfolio &amp; Case Studies</text>
+    <text x="26" y="92" class="sans" font-size="13" fill="#A1A1AA">Bilingual showcase featuring SQL engineering</text>
+    <text x="26" y="112" class="sans" font-size="13" fill="#A1A1AA">reports, interactive charts &amp; full-stack work.</text>
 
-    <!-- Title & Description -->
-    <text x="24" y="76" fill="#FFFFFF" font-size="20" font-weight="700" letter-spacing="-0.4" class="font-sans">
-      Algobot &amp; Signal — Market ML Suite
-    </text>
-    <text x="24" y="102" fill="#A1A1AA" font-size="12.5" font-weight="400" class="font-sans">
-      Gradient-boosted market forecasting (XGBoost, LightGBM), OHLCV feature
-    </text>
-    <text x="24" y="121" fill="#A1A1AA" font-size="12.5" font-weight="400" class="font-sans">
-      engineering via CCXT, strategy backtesting CLI &amp; automated PDF reporting.
-    </text>
+    <g transform="translate(26, 136)">
+      <rect x="0" y="0" width="84" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="42" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">JavaScript</text>
 
-    <!-- Tech Stack Pills -->
-    <g transform="translate(24, 152)">
-      <rect x="0" y="0" width="74" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="37" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">XGBoost</text>
+      <rect x="92" y="0" width="72" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="128" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">Three.js</text>
 
-      <rect x="82" y="0" width="90" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="127" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">Scikit-Learn</text>
+      <rect x="172" y="0" width="58" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="201" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">GSAP</text>
 
-      <rect x="180" y="0" width="56" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="208" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">CCXT</text>
-
-      <rect x="244" y="0" width="66" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="277" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">Pandas</text>
-
-      <rect x="318" y="0" width="80" height="26" rx="8" fill="#181922" stroke="#FFFFFF" stroke-opacity="0.08" />
-      <text x="358" y="17" text-anchor="middle" fill="#E5E5EA" font-size="11" font-weight="500" class="font-mono">ReportLab</text>
+      <rect x="238" y="0" width="64" height="24" rx="6" fill="#111111" stroke="#262626" stroke-width="1"/>
+      <text x="270" y="16" text-anchor="middle" class="mono" font-size="10.5" fill="#D4D4D8">Vercel</text>
     </g>
   </g>
 </svg>
