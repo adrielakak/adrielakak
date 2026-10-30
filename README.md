@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/terminal.svg" width="100%" alt="Adriel Kourlate — ASCII Terminal & Quant Engine" />
+<img src="./assets/banner.svg" width="100%" alt="ADRIEL KOURLATE" />
 
 <br /><br />
 

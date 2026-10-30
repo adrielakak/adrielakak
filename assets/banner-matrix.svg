@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1143" height="178" viewBox="0 0 1143 178" role="img" aria-label="ADRIEL KOURLATE">
+<title>ADRIEL KOURLATE</title>
+<style>.fl{animation:fl 8s linear infinite}@keyframes fl{to{transform:translateX(-2286px)}}@media (prefers-reduced-motion:reduce){.rv,.sh,.fl{animation:none}.sh{opacity:0}}</style>
+<defs>
+<linearGradient id="g" gradientUnits="userSpaceOnUse" x1="24" y1="0" x2="1118.3999999999999" y2="0"><stop offset="0.000" stop-color="#00ff41"/><stop offset="1.000" stop-color="#008f11"/></linearGradient>
+<linearGradient id="gf" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="3429" y2="0"><stop offset="0.000" stop-color="#00ff41"/><stop offset="0.333" stop-color="#008f11"/><stop offset="0.667" stop-color="#00ff41"/><stop offset="1.000" stop-color="#008f11"/></linearGradient>
+<linearGradient id="s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="t"><text font-family='ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace' font-size="16" xml:space="preserve"><tspan x="24" y="37.1" textLength="1094.4" lengthAdjust="spacingAndGlyphs"> █████╗ ██████╗ ██████╗ ██╗███████╗██╗         ██╗  ██╗ ██████╗ ██╗   ██╗██████╗ ██╗      █████╗ ████████╗███████╗</tspan><tspan x="24" y="53.1" textLength="1094.4" lengthAdjust="spacingAndGlyphs">██╔══██╗██╔══██╗██╔══██╗██║██╔════╝██║         ██║ ██╔╝██╔═══██╗██║   ██║██╔══██╗██║     ██╔══██╗╚══██╔══╝██╔════╝</tspan><tspan x="24" y="69.1" textLength="1094.4" lengthAdjust="spacingAndGlyphs">███████║██║  ██║██████╔╝██║█████╗  ██║         █████╔╝ ██║   ██║██║   ██║██████╔╝██║     ███████║   ██║   █████╗  </tspan><tspan x="24" y="85.1" textLength="1094.4" lengthAdjust="spacingAndGlyphs">██╔══██║██║  ██║██╔══██╗██║██╔══╝  ██║         ██╔═██╗ ██║   ██║██║   ██║██╔══██╗██║     ██╔══██║   ██║   ██╔══╝  </tspan><tspan x="24" y="101.1" textLength="1094.4" lengthAdjust="spacingAndGlyphs">██║  ██║██████╔╝██║  ██║██║███████╗███████╗    ██║  ██╗╚██████╔╝╚██████╔╝██║  ██║███████╗██║  ██║   ██║   ███████╗</tspan><tspan x="24" y="117.1" textLength="1094.4" lengthAdjust="spacingAndGlyphs">╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝    ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝</tspan></text></clipPath>
+<clipPath id="r"><rect class="rv" x="0" y="0" width="1143" height="178"/></clipPath>
+</defs>
+<g clip-path="url(#r)"><g clip-path="url(#t)">
+<rect class="fl" x="0" y="0" width="3429" height="178" fill="url(#gf)"/>
+</g></g>
+<text x="571.5" y="158" text-anchor="middle" font-family='ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace' font-size="15" fill="#a1a1aa">Data Science · Relational SQL Architecture · Quantitative Machine Learning</text>
+</svg>
