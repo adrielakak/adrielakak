@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/spinning-torus.gif" width="380" alt="Terminal 3D ASCII Animation" />
+<img src="./assets/lorenz-attractor.gif" width="480" alt="Lorenz Attractor — 3D Dynamical System" />
 
 # Adriel Kourlate
 **Data Science · Relational SQL Architecture · Quantitative Machine Learning**
