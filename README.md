@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/lorenz-attractor.gif" width="480" alt="Lorenz Attractor — 3D Dynamical System" />
+<img src="./assets/widescreen-wave.gif" width="100%" alt="3D Widescreen ASCII Horizon Wave" />
 
 # Adriel Kourlate
 **Data Science · Relational SQL Architecture · Quantitative Machine Learning**
