@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/widescreen-wave.gif" width="100%" alt="3D Widescreen ASCII Horizon Wave" />
+<img src="./assets/widescreen-tunnel.gif" width="100%" alt="3D Perspective Tunnel — Real ASCII Geometry" />
 
 # Adriel Kourlate
 **Data Science · Relational SQL Architecture · Quantitative Machine Learning**
