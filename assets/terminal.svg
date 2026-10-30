@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="terminal-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#0d141f"/>
+    </linearGradient>
+
+    <linearGradient id="header-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#162032"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes lineIn {
+        0% { opacity: 0; transform: translateY(3px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { filter: drop-shadow(0 0 2px rgba(16, 185, 129, 0.4)); }
+        50% { filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.8)); }
+      }
+
+      .window-frame {
+        fill: url(#terminal-bg);
+        stroke: #1e293b;
+        stroke-width: 1.5;
+        rx: 12px;
+      }
+      .window-header {
+        fill: url(#header-bg);
+        rx: 12px;
+      }
+      .window-header-cover {
+        fill: url(#header-bg);
+      }
+      .window-border-bottom {
+        stroke: #1e293b;
+        stroke-width: 1;
+      }
+      .window-title {
+        fill: #94a3b8;
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+      }
+
+      .code-text {
+        font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Monaco, Consolas, monospace;
+        font-size: 13px;
+        letter-spacing: 0px;
+        white-space: pre;
+      }
+
+      /* Color syntax */
+      .c-prompt-user { fill: #10b981; font-weight: 700; }
+      .c-prompt-host { fill: #38bdf8; }
+      .c-prompt-arrow { fill: #f59e0b; }
+      .c-cmd { fill: #f8fafc; font-weight: 600; }
+      .c-green { fill: #10b981; }
+      .c-emerald { fill: #34d399; }
+      .c-cyan { fill: #38bdf8; }
+      .c-sky { fill: #0ea5e9; }
+      .c-purple { fill: #c084fc; }
+      .c-amber { fill: #fbbf24; }
+      .c-rose { fill: #fb7185; }
+      .c-white { fill: #ffffff; font-weight: 600; }
+      .c-dim { fill: #475569; }
+      .c-muted { fill: #64748b; }
+
+      .cursor {
+        fill: #10b981;
+        animation: blink 0.9s infinite;
+      }
+
+      .glow-banner {
+        animation: pulseGlow 4s ease-in-out infinite;
+      }
+
+      /* Staggered animation classes */
+      .anim {
+        animation: lineIn 0.35s ease forwards;
+        opacity: 0;
+      }
+      .d0 { animation-delay: 0.1s; }
+      .d1 { animation-delay: 0.4s; }
+      .d2 { animation-delay: 0.8s; }
+      .d3 { animation-delay: 1.2s; }
+      .d4 { animation-delay: 1.6s; }
+      .d5 { animation-delay: 2.0s; }
+      .d6 { animation-delay: 2.4s; }
+      .d7 { animation-delay: 2.8s; }
+      .d8 { animation-delay: 3.2s; }
+      .d9 { animation-delay: 3.6s; }
+      .d10 { animation-delay: 4.0s; }
+      .d11 { animation-delay: 4.4s; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .anim {
+          animation: none !important;
+          opacity: 1 !important;
+        }
+        .cursor {
+          animation: none !important;
+          opacity: 1 !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Window Container -->
+  <rect width="880" height="500" class="window-frame" />
+  <rect width="880" height="38" class="window-header" />
+  <rect y="24" width="880" height="14" class="window-header-cover" />
+  <line x1="0" y1="38" x2="880" y2="38" class="window-border-bottom" />
+
+  <!-- Window Controls -->
+  <circle cx="24" cy="19" r="6" fill="#ef4444" />
+  <circle cx="44" cy="19" r="6" fill="#f59e0b" />
+  <circle cx="64" cy="19" r="6" fill="#10b981" />
+  <text x="440" y="24" text-anchor="middle" class="window-title">adriel@quant-node: ~/profile/core (zsh)</text>
+
+  <!-- Terminal Content -->
+  <g transform="translate(30, 68)" class="code-text">
+    
+    <!-- Initial Prompt -->
+    <text y="0" class="anim d0">
+      <tspan class="c-prompt-user">adriel</tspan><tspan class="c-dim">@</tspan><tspan class="c-prompt-host">quant-node</tspan><tspan class="c-dim">:</tspan><tspan class="c-amber">~/profile</tspan><tspan class="c-prompt-arrow">❯</tspan> <tspan class="c-cmd">./boot_profile.sh --target=quant-engineer</tspan>
+    </text>
+
+    <!-- ASCII Art Banner (Glow) -->
+    <g class="glow-banner">
+      <text y="26" class="anim d1 c-emerald">    ___    ____  ____  ________ __     __ ______  __  ______  __    ___  ______ ____</text>
+      <text y="44" class="anim d1 c-emerald">   /   |  / __ \/ __ \/  _/ ____/ /    / //_/ __ \/ / / / __ \/ /   /   |/_  __// __/</text>
+      <text y="62" class="anim d1 c-emerald">  / /| | / / / / /_/ // // __/ / /    / ,&lt; / / / / / / / /_/ / /   / /| | / /  / _/  </text>
+      <text y="80" class="anim d1 c-emerald"> / ___ |/ /_/ / _, _// // /___/ /___ / /| / /_/ / /_/ / _, _/ /___/ ___ |/ /  / /___ </text>
+      <text y="98" class="anim d1 c-emerald">/_/  |_/_____/_/ |_/___/_____/_____//_/ |_|\____/\____/_/ |_/_____/_/  |_/_/  /_____/ </text>
+    </g>
+
+    <!-- System specs -->
+    <text y="128" class="anim d2">
+      <tspan class="c-cyan">[SYS:NODE]</tspan> Dual Degree: <tspan class="c-white">Centrale Nantes</tspan> × <tspan class="c-white">Audencia</tspan> <tspan class="c-dim">|</tspan> Visiting: <tspan class="c-white">Shenzhen University</tspan>
+    </text>
+    <text y="148" class="anim d3">
+      <tspan class="c-cyan">[CORE:DOM]</tspan> Focus: <tspan class="c-amber">Data Science</tspan> · <tspan class="c-green">Relational SQL (3NF)</tspan> · <tspan class="c-purple">Explainable ML (TreeSHAP)</tspan>
+    </text>
+
+    <!-- ASCII Pipeline Block -->
+    <text y="180" class="anim d4 c-dim">┌── DATA ARCHITECTURE &amp; QUANT PIPELINE ────────────────────────────────────────────────────────┐</text>
+    <text y="200" class="anim d5">
+      <tspan class="c-dim">│  </tspan><tspan class="c-cyan">[ PostgreSQL (14 3NF) ]</tspan> <tspan class="c-dim">──►</tspan> <tspan class="c-amber">[ Feature Store &amp; Risk ]</tspan> <tspan class="c-dim">──►</tspan> <tspan class="c-green">[ LightGBM + TreeSHAP ]</tspan> <tspan class="c-dim">│</tspan>
+    </text>
+    <text y="220" class="anim d5">
+      <tspan class="c-dim">│  </tspan><tspan class="c-muted">Schema Normalization</tspan>       <tspan class="c-muted">Multi-Factor Risk Engine</tspan>     <tspan class="c-muted">Explainable Alpha Models │</tspan>
+    </text>
+    <text y="240" class="anim d6 c-dim">└──────────────────────────────────────────────────────────────────────────────────────────────┘</text>
+
+    <!-- Live Metrics / Volatility ASCII Line -->
+    <text y="270" class="anim d7">
+      <tspan class="c-purple">[METRICS] </tspan> Loss Curve: <tspan class="c-emerald">1.42 ──► 0.86 ──► 0.31 ──► 0.04</tspan>  <tspan class="c-dim">[</tspan><tspan class="c-green">R² = 0.942</tspan><tspan class="c-dim">]</tspan> <tspan class="c-rose">[TreeSHAP: Verified]</tspan>
+    </text>
+
+    <!-- Status of Selected Work -->
+    <text y="300" class="anim d8">
+      <tspan class="c-green">✔ </tspan><tspan class="c-white">Adastra Cockpit</tspan>    <tspan class="c-dim">.....</tspan> FinTechathon 2026 / China A-Shares Allocation     <tspan class="c-cyan">[ONLINE]</tspan>
+    </text>
+    <text y="320" class="anim d9">
+      <tspan class="c-green">✔ </tspan><tspan class="c-white">Train DB System</tspan>    <tspan class="c-dim">.....</tspan> Relational SQL Model, 14 Tables, Multi-Join Audit   <tspan class="c-cyan">[AUDITED]</tspan>
+    </text>
+    <text y="340" class="anim d10">
+      <tspan class="c-green">✔ </tspan><tspan class="c-white">Electoral Study</tspan>    <tspan class="c-dim">.....</tspan> 2002–2022 Geospatial Realignment &amp; Turnout Engine  <tspan class="c-cyan">[COMPUTED]</tspan>
+    </text>
+
+    <!-- Ready Prompt with blinking cursor -->
+    <text y="382" class="anim d11">
+      <tspan class="c-prompt-user">adriel</tspan><tspan class="c-dim">@</tspan><tspan class="c-prompt-host">quant-node</tspan><tspan class="c-dim">:</tspan><tspan class="c-amber">~/profile</tspan><tspan class="c-prompt-arrow">❯</tspan> <tspan class="c-cmd">status --ready-for-impact</tspan> <tspan class="cursor">█</tspan>
+    </text>
+
+  </g>
+</svg>
