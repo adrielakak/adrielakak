@@ -1,8 +1,13 @@
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="ADRIEL KOURLATE" />
+<img src="./assets/spinning-torus.gif" width="380" alt="Terminal 3D ASCII Animation" />
 
-<br /><br />
+# Adriel Kourlate
+**Data Science · Relational SQL Architecture · Quantitative Machine Learning**
+
+<sub>Dual-degree Centrale Nantes × Audencia · Visiting Shenzhen University</sub>
+
+<br />
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-adrielkourlate.vercel.app-0b0f17?style=flat-square&logo=vercel&logoColor=white&labelColor=1a2234)](https://portfolio-nu-eosin-a953g7hsv2.vercel.app)
 [![Adastra](https://img.shields.io/badge/FinTechathon-Adastra_ML_Cockpit-0b0f17?style=flat-square&logo=python&logoColor=10b981&labelColor=1a2234)](https://webank-tawny.vercel.app)
