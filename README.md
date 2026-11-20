@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="./assets/widescreen-tunnel.gif" width="100%" alt="3D Perspective Tunnel - Real ASCII Geometry" />
-
 # Adriel Kourlate
 **Software Engineering · Data & SQL · Quantitative ML**
 
