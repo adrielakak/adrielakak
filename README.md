@@ -7,7 +7,7 @@
 
 <br />
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-adrielkourlate.vercel.app-0b0f17?style=flat-square&logo=vercel&logoColor=white&labelColor=1a2234)](https://portfolio-nu-eosin-a953g7hsv2.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View_site-0b0f17?style=flat-square&logo=vercel&logoColor=white&labelColor=1a2234)](https://portfolio-nu-eosin-a953g7hsv2.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Adriel_Kourlate-0b0f17?style=flat-square&logo=linkedin&logoColor=0ea5e9&labelColor=1a2234)](https://www.linkedin.com/in/adriel-kourlate-28033032b/)
 [![Contact](https://img.shields.io/badge/Contact-adriel.kourlate5%40audencia.com-0b0f17?style=flat-square&logo=gmail&logoColor=fb7185&labelColor=1a2234)](mailto:adriel.kourlate5@audencia.com)
 
@@ -18,8 +18,8 @@
 ### Selected Software & Data Projects
 
 #### 01 / [GravityNotch](https://github.com/adrielakak/GravityNotch) · `Swift` `SwiftUI` `AppKit` `macOS`
-Native macOS Dynamic Island app (fork of *boring.notch*), shipped across **9 releases (`v1.2.6`)** with Sparkle auto-updates and a [dedicated website](https://adrielakak.github.io/GravityNotch/).
-- **Engineering:** `SkyLight` lock screen media player (synced lyrics & HLS animated artwork), macOS Tahoe hardware HUDs, screen OCR, clipboard history, and live Claude Code / Codex / Antigravity session tracking.
+Native macOS Dynamic Island app (fork of *boring.notch*), shipped across **30+ releases (latest `v1.6.1`)** with Sparkle auto-updates, a Homebrew cask and a [dedicated website](https://adrielakak.github.io/GravityNotch/) documented in English and French.
+- **Engineering:** `SkyLight` lock screen media player (full screen lyrics, HLS animated artwork), word-synced lyrics from LRCLIB and Apple Music, Apple Music AutoMix transitions, AirPods Live Activity, macOS Tahoe hardware HUDs and system notifications (Focus, Universal Clipboard), screen OCR, clipboard history, and live Claude Code / Codex / Antigravity session tracking with real-time diffs.
 
 #### 02 / [Adastra (`webank`)](https://github.com/adrielakak/webank) · `FastAPI` `React` `TypeScript` `LightGBM` `TreeSHAP`
 Full-stack quantitative risk & allocation cockpit built for FinTechathon 2026 ([live demo](https://webank-tawny.vercel.app)).
